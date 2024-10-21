@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BT Buổi 5 JS</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <!-- //Bài tập 1 -->
+    <div class="container mx-auto max-w-sm mt-20">
+      <h3 class="text-red-400 text-4xl">Bài tập 1: Xét tuyển</h3>
+      <form class="max-w-sm">
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập điểm chuẩn</label
+          >
+          <input
+            type="text"
+            id="diemChuan"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập điểm 3 môn</label
+          >
+          <input
+            type="text"
+            id="diemBaMon"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập Khu Vực (A, B, C)</label
+          >
+          <input
+            type="text"
+            id="khuVuc"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập đối tượng (1, 2, 3)</label
+          >
+          <input
+            type="text"
+            id="doiTuong"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+      </form>
+      <button
+        id="tinhKQThi"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính kết quả
+      </button>
+    </div>
+    <div id="result1" class="mt-5 max-w-sm mx-auto"></div>
+    <!-- //Bài tập 2 -->
+    <div class="container mx-auto max-w-sm mt-20">
+      <h3 class="text-red-400 text-4xl">Bài tập 2: Tính tiền điện</h3>
+
+      <form class="max-w-sm">
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập lượng điện tiêu thụ</label
+          >
+          <input
+            type="text"
+            id="luongDien"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+      </form>
+      <button
+        id="tinhTienDien"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính tiền điện
+      </button>
+    </div>
+    <div id="result2" class="mt-5 max-w-sm mx-auto"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
