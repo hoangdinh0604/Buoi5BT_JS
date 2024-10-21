@@ -99,6 +99,132 @@
       </button>
     </div>
     <div id="result2" class="mt-5 max-w-sm mx-auto"></div>
+    <!-- Bài tập tính thuế cá nhân -->
+    <div class="container mx-auto max-w-sm mt-20">
+      <h3 class="text-red-400 text-4xl">
+        Bài tập 3: Tính thuế thu nhập cá nhân
+      </h3>
+
+      <form class="max-w-sm">
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập tên</label
+          >
+          <input
+            type="text"
+            id="ten"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập tổng thu nhập năm (triệu VND)</label
+          >
+          <input
+            type="text"
+            id="thuNhap"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập số người thụ phuộc</label
+          >
+          <input
+            type="text"
+            id="soNguoiPhuThuoc"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+      </form>
+      <button
+        id="tinhThue"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính thuế
+      </button>
+    </div>
+    <div id="result3" class="mt-5 max-w-sm mx-auto"></div>
+    <!-- Bài tập tính thuế cá nhân -->
+    <div class="container mx-auto max-w-sm mt-20">
+      <h3 class="text-red-400 text-4xl">Bài tập 4: Tính tiền cáp</h3>
+
+      <form class="max-w-sm">
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập mã khách hàng</label
+          >
+          <input
+            type="text"
+            id="maKH"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <form class="max-w-sm mx-auto">
+          <label
+            for="loaiKH"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Chọn loại khách hàng</label
+          >
+          <select
+            onchange="myFunction()"
+            id="loaiKH"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          >
+            <option selected>Xin chọn loại khách hàng</option>
+            <option value="1">Nhà dân</option>
+            <option value="2">Doanh Nghiệp</option>
+          </select>
+        </form>
+        <div class="mb-5 mt-5" id="divSoKetNoi">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập Số Kết Nối</label
+          >
+          <input
+            type="text"
+            id="soKetNoi"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <div class="mb-5 mt-5">
+          <label
+            for="text"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nhập số kênh cao cấp</label
+          >
+          <input
+            type="text"
+            id="soKenhCaoCap"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+      </form>
+      <button
+        id="tinhTienCap"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Tính tiền cáp
+      </button>
+    </div>
+    <div id="result4" class="mt-5 max-w-sm mx-auto"></div>
     <script src="./js/main.js"></script>
   </body>
 </html>
